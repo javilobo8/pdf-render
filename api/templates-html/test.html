@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      @page {
+        size: A4;
+        margin: 0;
+
+        @bottom-left {
+          content: counter(page) "/" counter(pages);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Test</h1>
+    <p>Name: {{ name }}</p>
+    <div style="width: 30px; height: 30px; background-color: red;"></div>
+  </body>
+</html>
